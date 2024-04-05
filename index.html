@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhjot Singh</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-ico">
+    <link rel="stylesheet" href="index-style.css">
+</head>
+<body>
+    <header>
+        <!--This is the Header of the Home Page-->
+        <div id="Heading">
+           <h1>Prabhjot Singh</h1>
+           <h3>Home</h3>
+        </div>
+        <!--This is the Navigation Bar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="school.html">School</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="button" id="button1">Change Theme</button></li>
+                <li><button class="button" id="button2">Back to Default</button></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Container class to structure the page as a flexbox-->
+    <div class="container">
+        <div class="item">
+            <p>Hi, my name is Prabhjot Singh and I'm a first year student enrolled in the Department of Computer Science at Dalhousie University. 
+               My interest in computer science was sparked by an intel AI4Y (artificial intelligence for youth) workshop that I attended in 8th grade 
+               and since then, I've been hooked. It is during this workshop that I learned more about artificial intelligence fields such data science, computer vision, and natural language processing.
+               It is also the reason why I plan on becoming a Surveillance Systems Engineer. Surveillance Systems make use of computer vision to monitor video feeds for security purposes.
+            </p>
+        </div>
+        <div class="item">
+            <img src="photos/Prabh.JPG" alt="A picture of me" width="300" height="300"> 
+            <figcaption>A picture of myself</figcaption>
+        </div>
+        <div class="item">
+            <video width="424" height="232" controls>
+                <source src="videos/dance.mp4" type="video/mp4">
+                A video of me doing bhangra
+            </video>
+            <figcaption>I also do Bhangra</figcaption>
+        </div>
+        <div class="item">
+            <video width="240" height="424" controls>
+                <source src="videos/snow.mp4" type="video/mp4">
+                This is where I currently live, the beautiful city of Halifax, Nova Scotia.
+            </video>
+            <figcaption>I love it when it snows (not snow storms though)</figcaption>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

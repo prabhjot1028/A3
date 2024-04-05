@@ -1,0 +1,115 @@
+/*Styling the basic contents of the page such as body, nav bar*/
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+}
+
+* {
+    margin:2px;
+    padding:5px;
+}
+
+div >p {
+    font-weight: bold;
+}
+
+nav {
+    background-color: blue;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    border-right: 1px solid #fff;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #4682b4;
+}
+/*Styling the images and videos to have border, padding, and margin*/
+.item ~ img,
+.item ~ video {
+    border: 2px solid black; 
+    padding: 10px; 
+    margin: 10px; 
+}
+/*Making use of the Pseudo Element Selector*/
+.item:first-child::before {
+    content: "Introduction"; 
+    display: block; 
+    color: steelblue; 
+    font-weight: bold; 
+}
+/*Styling the links*/
+a[href]:hover{
+    color:white;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5);
+    font-size: larger;
+}
+
+a[href]{
+    color:white;
+}
+
+ul {
+    list-style: none;
+}
+/*Styling to make a flexbox followed by media queries for responsiveness*/
+.container{
+    display: flex; 
+    flex-wrap: wrap;   
+    justify-content: space-around;
+}
+
+.item {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .item{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width:1250px) {
+    .item{
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width:1251px) {
+    .item{
+        width: 15%;
+    }
+}
+
+#button1, #button2 {
+    background-color: steelblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 10px; /* Adjust margin as needed */
+}
+

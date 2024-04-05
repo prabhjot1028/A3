@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhjot Singh</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-ico">
+    <link rel="stylesheet" href="contact-style.css">
+</head>
+<body>
+    <header>
+        <div>
+           <h1>Prabhjot Singh</h1>
+           <h3>Contact</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="school.html">School</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="button" id="button1">Change Theme</button></li>
+                <li><button class="button" id="button2">Back to Default</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>You can email me at: <a href="mailto:prabhjotsingh.1028@gmail.com">prabhjotsingh.1028@gmail.com</a> and below I have included some of my social media links:</p>
+        <!--Using another div class where we can apply flexboxes-->
+        <div class="flex-container">
+            <a href="https://www.instagram.com/prabhjot_.1028/">
+                <img src="photos/ig.png" alt="instagram" width="50" height="50">
+            </a>
+            <a href="https://www.linkedin.com/in/prabhjot-singh-b0687b289/">
+                <img src="photos/linkedin.png" alt="linkedIn" width="50" height="50">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100038273448620">
+                <img src="photos/fb.jpg" alt="facebook" width="50" height="50">
+            </a>
+        </div>
+    </main>
+    <div id="form-container">
+    <form id="signUpForm" action="#">
+        <h3>Sign Up Form</h3>
+        <div class="input">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" />
+         </div>   
+        <div class="input">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName"/>
+        </div>
+        <div class="input">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email address"/>
+        </div>   
+        <div class="input"> 
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="0000000000"/>
+        </div>
+        <div class="input">
+            <label for="query">Query</label>
+            <input type="text" id="query" name="query" placeholder="What would you like to ask me about?"/>
+        </div>
+        <div id="button">
+            <button id="submit" onclick="validateForm()">Submit</button>
+        </div>
+        <div id="message">
+        </div>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

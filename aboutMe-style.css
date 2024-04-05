@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+}
+
+* {
+    margin:2px;
+    padding:5px;
+}
+
+h1 + h3 {
+    color:darkgray;
+}
+
+div >p {
+    font-weight: bold;
+}
+
+header {
+    grid-column: 1;
+}
+
+nav {
+    background-color: blue;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    border-right: 1px solid #fff;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #4682b4;
+}
+/*Styling the layout of the web page to be in a grid area format*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.video, .music {
+    padding: 20px;
+}
+
+.video {
+    grid-area: auto;
+}
+
+.music {
+    grid-area: auto;
+}
+
+a[href]:hover{
+    color:white;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5);
+    font-size: larger;
+}
+
+a[href]{
+    color:white;
+}
+
+img, video {
+    border: 2px solid #000; 
+    padding: 10px; 
+    margin: 10px; 
+}
+
+@media (max-width: 700px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Change to one column for stacking */
+        grid-template-rows: 2fr;
+    }
+    .video iframe {
+        max-width: 90%;
+    }
+    .music audio {
+        width: 90%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 2fr;
+    }
+}
+
+#button1, #button2 {
+    background-color: steelblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
